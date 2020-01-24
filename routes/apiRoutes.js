@@ -15,10 +15,10 @@ module.exports = function(app) {
         res.send(true);
         // New comment line
     });
-    // app.get("/api/notes", function(req, res) {
-    //     console.log(notes)
-    //     res.json(notes);
-    // });
+    app.get("/api/notes", function(req, res) {
+        console.log(notes)
+        res.json(notes);
+    });
     
 
 

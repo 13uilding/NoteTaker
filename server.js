@@ -9,7 +9,7 @@ const server = app.create
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
+app.use(express.static("public"));
 
 // Routes
 require("./routes/apiRoutes")(app);
